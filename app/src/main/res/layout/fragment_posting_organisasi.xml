@@ -1,0 +1,250 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" tools:context="mafia.kegiatanmahasiswa.PostingOrganisasi">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@android:color/white"
+        android:onClick="hideSoftKeyboard"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nama Acara"
+            android:id="@+id/textView14"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="false"
+            android:textColor="#939393"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="textPersonName"
+            android:hint="Nama Acara"
+            android:textColorHint="#5f5f5f"
+            android:ems="10"
+            android:id="@+id/txt_nama_acara"
+            android:textColor="@android:color/black"
+            android:textIsSelectable="false"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:background="@android:drawable/edit_text" />
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Lokasi Acara"
+            android:id="@+id/textView16"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="false"
+            android:textColor="#939393"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="textPersonName"
+            android:hint="Lokasi Acara"
+            android:textColorHint="#5f5f5f"
+            android:ems="10"
+            android:id="@+id/txt_lokasi_acara"
+            android:textColor="@android:color/black"
+            android:textIsSelectable="false"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp"
+            android:background="@android:drawable/edit_text" />
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Tanggal Acara"
+            android:id="@+id/textView17"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="false"
+            android:textColor="#939393"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/txt_tanggal_acara"
+            android:textColor="@android:color/black"
+            android:textIsSelectable="false"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Tanggal Acara"
+            android:textColorHint="#5f5f5f"
+            android:layout_centerHorizontal="true"
+            android:background="@android:drawable/edit_text" />
+
+        <Button
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:text="Pilih Tanggal"
+            android:id="@+id/btn_tanggal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-15dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="openCalendar"
+            android:background="#73acd8"
+            android:layout_weight="0.04" />
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Waktu Acara"
+            android:id="@+id/textView18"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="false"
+            android:textColor="#939393"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="time"
+            android:ems="10"
+            android:id="@+id/txt_waktu_acara"
+            android:textColor="@android:color/black"
+            android:textIsSelectable="false"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Waktu Acara"
+            android:textColorHint="#5f5f5f"
+            android:layout_centerHorizontal="true"
+            android:background="@android:drawable/edit_text" />
+
+        <Button
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_waktu"
+            android:layout_gravity="center_horizontal"
+            android:background="#73acd8"
+            android:layout_marginTop="-15dp"
+            android:layout_marginBottom="10dp"
+            android:text="Pilih Waktu"
+            android:onClick="openTime" />
+
+        <CheckBox
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="Buka Pendaftaran ?"
+            android:id="@+id/checkBox"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:checked="true"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Flyer Acara"
+            android:id="@+id/textView19"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="false"
+            android:textColor="#939393"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="240dp"
+            android:id="@+id/flyer_acara"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/flyer1" />
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:text="PILIH GAMBAR"
+            android:id="@+id/btn_upload_flyer"
+            android:layout_gravity="center_horizontal"
+            android:onClick="OnClickUpload"
+            android:background="#73acd8"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="File Proposal"
+            android:id="@+id/textView15"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="false"
+            android:textColor="#939393"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:inputType="time"
+            android:ems="10"
+            android:id="@+id/txt_proposal"
+            android:textColor="@android:color/black"
+            android:textIsSelectable="false"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Proposal"
+            android:textColorHint="#5f5f5f"
+            android:layout_centerHorizontal="true"
+            android:background="@android:drawable/edit_text" />
+
+        <Button
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_upload_proposal"
+            android:layout_gravity="center_horizontal"
+            android:background="#73acd8"
+            android:layout_marginTop="-15dp"
+            android:layout_marginBottom="10dp"
+            android:text="PILIH FILE"
+            android:onClick="openDir" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="KIRIM"
+            android:id="@+id/btn_post"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="onClickPost"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#e3662e"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

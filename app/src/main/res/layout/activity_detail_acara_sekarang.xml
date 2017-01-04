@@ -1,0 +1,229 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="mafia.kegiatanmahasiswa.DetailAcaraSekarang"
+    android:background="#ffffff">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@android:color/white">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:id="@+id/frameLayout2">
+            <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/rapat_btn"
+                android:background="@drawable/group"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:onClick="onRapat"
+                android:nestedScrollingEnabled="false" />
+
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Dies Natalies Fasilkom TI USU 2015"
+                android:textSize="18sp"
+                android:textColor="#4b4c5d"
+                android:layout_marginTop="25dp"
+                android:id="@+id/judul_acara"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_below="@+id/frame_judul"
+            android:id="@+id/flyer_layout">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="210dp"
+                android:id="@+id/flyer"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/sample_fly"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        `
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:id="@+id/layoutDetail">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView2"
+                    android:layout_below="@+id/imageView"
+                    android:layout_toRightOf="@+id/imageButton"
+                    android:layout_toEndOf="@+id/imageButton"
+                    android:background="@drawable/home"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="left"
+                    android:layout_weight="0"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Jl.Balai Desa, No.69, Medan"
+                    android:id="@+id/txt_lokasi"
+                    android:layout_alignTop="@+id/imageView2"
+                    android:layout_toRightOf="@+id/imageView2"
+                    android:layout_toEndOf="@+id/imageView2"
+                    android:textColor="#4b4c5d"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="right" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView3"
+                    android:layout_below="@+id/imageView2"
+                    android:layout_toRightOf="@+id/imageButton"
+                    android:layout_toEndOf="@+id/imageButton"
+                    android:background="@drawable/date"
+                    android:layout_marginTop="0dp"
+                    android:layout_gravity="left"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="6 Desember 2015"
+                    android:id="@+id/txt_tanggal"
+                    android:layout_below="@+id/txt_lokasi"
+                    android:layout_alignLeft="@+id/txt_lokasi"
+                    android:layout_alignStart="@+id/txt_lokasi"
+                    android:textColor="#4b4c5d"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView4"
+                    android:layout_below="@+id/imageView3"
+                    android:layout_alignLeft="@+id/imageView3"
+                    android:layout_alignStart="@+id/imageView3"
+                    android:background="@drawable/clock" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="13.00 WIB"
+                    android:id="@+id/txt_waktu"
+                    android:layout_below="@+id/txt_tanggal"
+                    android:layout_alignLeft="@+id/txt_tanggal"
+                    android:layout_alignStart="@+id/txt_tanggal"
+                    android:textColor="#4b4c5d"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView7"
+                    android:background="@drawable/file"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Keterangan/Detail Acara"
+                    android:id="@+id/textKeterangan"
+                    android:layout_alignTop="@+id/imageView5"
+                    android:layout_alignLeft="@+id/txt_waktu"
+                    android:layout_alignStart="@+id/txt_waktu"
+                    android:textColor="#4b4c5d"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView5"
+                    android:background="@drawable/file"
+                    android:layout_below="@+id/imageView4"
+                    android:layout_toLeftOf="@+id/txt_lokasi"
+                    android:layout_toStartOf="@+id/txt_lokasi"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Proposal Acara"
+                    android:id="@+id/textView6"
+                    android:layout_alignTop="@+id/imageView5"
+                    android:layout_alignLeft="@+id/txt_waktu"
+                    android:layout_alignStart="@+id/txt_waktu"
+                    android:textColor="#304294"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="KONFIRMASI KEHADIRAN"
+            android:id="@+id/btn_post"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="onClickPost"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#e3662e"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</ScrollView>

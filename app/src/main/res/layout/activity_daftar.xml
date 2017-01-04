@@ -1,0 +1,281 @@
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="mafia.kegiatanmahasiswa.Daftar"
+        android:background="@android:color/white"
+            android:onClick="hideSoftKeyboard">
+
+
+            <TextView
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="NIM/NIP"
+                android:id="@+id/textView2"
+                android:layout_gravity="center_horizontal"
+                android:singleLine="false"
+                android:textColor="#939393"
+                android:textSize="14sp" />
+
+            <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txt_daftar_username"
+            android:textColor="@android:color/black"
+            android:textIsSelectable="false"
+            android:textColorHint="#5f5f5f"
+            android:textSize="18sp"
+            android:hint="NIM/NIP"
+                android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+                android:background="@android:drawable/edit_text" />
+
+            <TextView
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Jenis User"
+                android:id="@+id/textView13"
+                android:layout_gravity="center_horizontal"
+                android:singleLine="false"
+                android:textColor="#939393"
+                android:textSize="14sp" />
+
+            <Spinner
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/spin"
+                android:spinnerMode="dialog"
+                />
+
+
+            <TextView
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Nama Lengkap"
+                android:id="@+id/textView3"
+                android:layout_gravity="center_horizontal"
+                android:singleLine="false"
+                android:textColor="#939393"
+                android:textSize="14sp" />
+
+            <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txt_nama_lengkap"
+            android:textColor="@android:color/black"
+            android:hint="Nama Lengkap"
+            android:textColorHint="#5f5f5f"
+            android:textSize="18sp"
+                android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+                android:background="@android:drawable/edit_text" />
+
+            <TextView
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Fakultas"
+                android:id="@+id/textView4"
+                android:layout_gravity="center_horizontal"
+                android:singleLine="false"
+                android:textColor="#939393"
+                android:textSize="14sp" />
+
+            <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txt_fakultas"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            android:hint="Fakultas"
+            android:textColorHint="#5f5f5f"
+                android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+                android:background="@android:drawable/edit_text" />
+
+            <TextView
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Program Studi"
+                android:id="@+id/textView5"
+                android:layout_gravity="center_horizontal"
+                android:singleLine="false"
+                android:textColor="#939393"
+                android:textSize="14sp" />
+
+            <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txt_prodi"
+            android:textColor="@android:color/black"
+            android:hint="Program Studi"
+            android:textColorHint="#5f5f5f"
+            android:textSize="18dp"
+                android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+                android:background="@android:drawable/edit_text" />
+
+            <TextView
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Email"
+                android:id="@+id/textView9"
+                android:layout_gravity="center_horizontal"
+                android:singleLine="false"
+                android:textColor="#939393"
+                android:textSize="14sp" />
+
+            <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/txt_password"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            android:hint="Email"
+            android:textColorHint="#5f5f5f"
+                android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+                android:background="@android:drawable/edit_text" />
+
+            <TextView
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Nomer HP"
+                android:id="@+id/textView10"
+                android:layout_gravity="center_horizontal"
+                android:singleLine="false"
+                android:textColor="#939393"
+                android:textSize="14sp" />
+
+            <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/txt_nomerhp"
+            android:textColor="@android:color/black"
+            android:textColorHint="#5f5f5f"
+            android:hint="Nomer HP"
+            android:textSize="18dp"
+                android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+                android:background="@android:drawable/edit_text" />
+
+            <TextView
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Password"
+                android:id="@+id/textView11"
+                android:layout_gravity="center_horizontal"
+                android:singleLine="false"
+                android:textColor="#939393"
+                android:textSize="14sp" />
+
+            <EditText
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/txt_daftar_password"
+                android:textColor="@android:color/black"
+                android:textColorHint="#5f5f5f"
+                android:hint="Password"
+                android:textSize="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:drawable/edit_text" />
+
+            <TextView
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Konfirmasi Password"
+                android:id="@+id/textView12"
+                android:layout_gravity="center_horizontal"
+                android:singleLine="false"
+                android:textColor="#939393"
+                android:textSize="14sp" />
+
+            <EditText
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:id="@+id/txt_daftar_konfirmasi_password"
+                android:textColor="@android:color/black"
+                android:textColorHint="#5f5f5f"
+                android:hint="Konfirmasi Password"
+                android:textSize="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:drawable/edit_text"
+                android:inputType="textPassword" />
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/foto_profil"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:background="@drawable/boy" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="UPLOAD"
+                android:id="@+id/btn_upload"
+                android:layout_gravity="center_horizontal"
+                android:onClick="OnClickUpload"
+                android:background="#73acd8"
+                android:layout_marginTop="10dp" />
+
+            <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="DAFTAR"
+            android:id="@+id/btn_daftar"
+
+            android:onClick="OnClickDaftar"
+            android:background="#e3662e"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    </ScrollView>
